@@ -12,6 +12,7 @@
     --background-low:#091518;
     --background-medium: #0f2226;
     --background-high: #15292c;
+    --border: #224044;
 
     --paragraph-text:var(--pallete-3);
     --block-subtitle-text:var(--pallete-4);
@@ -69,9 +70,11 @@
 }
 
 .content-block-high{
+    position: relative;
+    top:15%;
     border-radius: 10px;
     width: fit-content;
-    height: fit-content;
+    height: 50%;
     background: var(--background-high);
 }
 
