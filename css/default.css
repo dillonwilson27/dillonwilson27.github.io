@@ -1,0 +1,28 @@
+:root{
+    --pallete-accent-dark: #1f110d;
+    --pallete-dark: #12181e;
+    --pallete-1: #0f252f;
+    --pallete-2: #2a9d8f;
+    --pallete-3: #e9c46a;
+    --pallete-4: #f4a261;
+    --pallete-5: #e76f51;
+    --pallete-accent-light: #faefd8;
+    --pallete-light: #cbe2ea;
+
+    --background-low:var(--pallete-1);
+    --background-medium: #1c3e46;
+    --background-high: #2d535d;
+
+    --paragraph-text:var(--pallete-3);
+}
+
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.paragraph-text{
+    color: var(--paragraph-text);
+}
