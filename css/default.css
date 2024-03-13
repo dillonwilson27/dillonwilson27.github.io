@@ -1,6 +1,6 @@
 :root{
     --pallete-accent-dark: #1f110d;
-    --pallete-dark: #12181e;
+    --pallete-dark: #090c0e;
     --pallete-1: #0f252f;
     --pallete-2: #2a9d8f;
     --pallete-3: #e9c46a;
@@ -9,11 +9,13 @@
     --pallete-accent-light: #faefd8;
     --pallete-light: #cbe2ea;
 
-    --background-low:var(--pallete-1);
-    --background-medium: #1c3e46;
-    --background-high: #2d535d;
+    --background-low:#091518;
+    --background-medium: #0f2226;
+    --background-high: #15292c;
 
     --paragraph-text:var(--pallete-3);
+    --block-subtitle-text:var(--pallete-4);
+    --block-title-text:var(--pallete-5);
 }
 
 .center{
@@ -23,6 +25,63 @@
     transform: translate(-50%,-50%);
 }
 
+.center-x{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+
+.center-text{
+    text-align: center;
+    width: 100%;
+}
+
+.block-title{
+    color: var(--block-title-text);
+    font-family: "Redex Pro", sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    margin: 0;
+}
+
+.block-subtitle{
+    color: var(--block-subtitle-text);
+    font-family: "Redex Pro", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0;
+}
+
 .paragraph-text{
+    margin: 10px;
+    font-family: "Redex Pro", sans-serif;
+    font-weight: 100;
+    font-size: 1em;
     color: var(--paragraph-text);
+}
+
+.content-block{
+    border-radius: 10px;
+    width: 80vmin;
+    height:80vmin;
+    background: var(--background-medium);
+
+}
+
+.content-block-high{
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    background: var(--background-high);
+}
+
+
+body{
+    background: var(--background-low);
+}
+li{
+    font-family: "Redex Pro", sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: var(--pallete-4);
 }
