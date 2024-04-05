@@ -12,7 +12,7 @@
 .grid-item{
     border-radius: 10px;
     width:100%;
-    overflow: clip;
+    transition:1s
 }
 #blur{
     width: 81vmin;
@@ -23,5 +23,11 @@
     transform:translate(-50%,-50%);
     filter: blur(4px);
     background-image:  linear-gradient(var(--pallete-3), var(--pallete-5));
-
+}
+#image{
+    box-shadow: 0 0 0 #00000000;
+    transition: 0.5s;
+}
+#image:hover{
+    box-shadow: 10px 5px 5px var(--background-low);
 }
