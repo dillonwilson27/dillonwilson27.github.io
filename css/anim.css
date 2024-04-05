@@ -1,5 +1,5 @@
 body{
-    background: #ffaa00;
+    animation: seize 2s linear infinite;
 }
 #wrapper{
     transition: 2s;
@@ -41,7 +41,7 @@ body{
 .animated-nav-menu a:hover{
     color: #ff00ff;
     background: #ffff00;
-    transform: scale(4,1);
+    transform: scale(10,1);
     border-radius: 100px;
 }
 
@@ -112,11 +112,33 @@ body{
     transform: scale(2,2) rotate(360deg);
     border-radius: 100%;
 }
+
 @keyframes flop {
     from{
         transform: skew(50deg) scale(2,1);
     }
     to{
         transform: skew(-50deg) scale(1,2);
+    }
+}
+
+@keyframes seize {
+    0%{
+        background:#ff0000
+    }
+    25%{
+        background: #ff00ff;
+    }
+    27%{
+        background: #ffff00;
+    }
+    50%{
+        background: #ffaa00;
+    }
+    75%{
+        background:#00ff00
+    }
+    100%{
+        background: #0000ff;
     }
 }
