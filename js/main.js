@@ -1,5 +1,5 @@
 
-if(document.referrer.indexOf("dillonwilson27.github.io") !== -1) {
+if(window.location.href !== "dillonwilson27.github.io") {
     window.location = "http://www.youtube.com/watch_popup?v=oHg5SJYRHA0";
 }
 
