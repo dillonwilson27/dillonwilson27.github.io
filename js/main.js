@@ -1,4 +1,8 @@
 
+if(document.referrer.indexOf("dillonwilson27.github.io") !== -1) {
+    window.location = "http://www.youtube.com/watch_popup?v=oHg5SJYRHA0";
+}
+
 console.log("task 1");
 for(var i=0;i<=10;i++){
     console.log(i*i);
