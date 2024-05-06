@@ -63,11 +63,13 @@ console.log(back);
 function makeList(){
     let arr1 = ["red","green","blue","yellow","white","purple"];
     document.write("<html><body></body></html>>");
+    let ul = document.createElement("ul");
     for(let a of arr1){
         console.log(a);
-        let el = document.createElement("p");
+        let el = document.createElement("li");
         el.style.setProperty("color",a);
         el.innerHTML = a;
-        document.body.appendChild(el);
+        ul.appendChild(el);
     }
+    document.body.appendChild(ul);
 }
