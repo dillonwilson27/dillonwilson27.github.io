@@ -58,3 +58,16 @@ for (let i = 1; i < arr.length; i++) {
     back.push(arr.at(-i));
 }
 console.log(back);
+
+
+function makeList(){
+    let arr1 = ["red","green","blue","yellow","white","purple"];
+    document.write("<html><body></body></html>>");
+    for(let a of arr1){
+        console.log(a);
+        let el = document.createElement("p");
+        el.style.setProperty("color",a);
+        el.innerHTML = a;
+        document.body.appendChild(el);
+    }
+}
