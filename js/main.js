@@ -62,7 +62,7 @@ console.log(back);
 
 function makeList(){
     let arr1 = ["red","green","blue","yellow","white","purple"];
-    document.write("<html><body></body></html>>");
+    document.write("<html><body></body></html>");
     let ul = document.createElement("ul");
     for(let a of arr1){
         console.log(a);
