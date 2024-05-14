@@ -1,5 +1,5 @@
 body{
-    background: url("../assets/background_stars.gif") repeat 0 0;
+    background: url("../assets/background-stars1.gif") repeat 0 0;
     margin: 0;
 }
 
@@ -21,4 +21,10 @@ body{
     font-style: italic;
     transform: scale(1,1.3);
     margin:0;
+}
+
+.footer{
+    color:gray;
+    font-size: 1em;
+    text-align: center;
 }
