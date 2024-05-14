@@ -9,3 +9,8 @@ body{
     width:70%;
     margin: 10vh auto 10vh;
 }
+
+.title-text{
+    font-family: UncleSam, emoji;
+    color: white;
+}
