@@ -73,14 +73,34 @@ body{
 }
 
 .article-ordered-list{
-    color: #666666;
+    color: hsl(0 100 50);
     font-family: "Sedan SC", cursive;
     font-weight: 400;
     font-style: normal;
-    border-left: #666666 5px solid;
+    border:5px dashed black;
     padding-left: 40px;
     font-size: 1em;
     background: rgba(0, 0, 0, 0.16);
+}
+
+.article-ordered-list li{
+    transition: 1s;
+}
+
+.article-ordered-list li:hover{
+    transform: scale(1.5);
+    color: hsl(180 100 50);
+    background: rgba(255, 0, 0, 0.44);
+}
+
+.article-footer-item{
+    font-size: 1.3em;
+    font-family: Danfo, ui-rounded;
+}
+
+.article-footer-title{
+    font-size: 1.4em;
+    font-family: Danfo, ui-rounded;
 }
 
 /*
