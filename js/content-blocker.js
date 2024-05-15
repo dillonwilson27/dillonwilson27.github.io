@@ -1,3 +1,3 @@
-if( window.location.href==="https://dillonwilson27.github.io"||window.location.href==="dillonwilson27.github.io") {
+if( window.location.href!="http://localhost:63342/dillonwilson27.github.io/") {
     window.location.href = "legacy/home.html";
 }
