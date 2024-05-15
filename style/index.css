@@ -8,6 +8,7 @@ body{
     height:140vh;
     width:70%;
     margin: 0 auto 10vh;
+    padding: 1% 2%;
 }
 
 .title-content{
@@ -27,4 +28,29 @@ body{
     color:gray;
     font-size: 1em;
     text-align: center;
+
+}
+
+.article-paragraph{
+    color:black;
+    font-family: "Gloria Hallelujah", system-ui;
+}
+.article-header{
+    color: black;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: "Jacquard 12", system-ui;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-align: center;
+}
+.article-quote{
+    color: #666666;
+    font-family: "Danfo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border-left: #666666 5px solid;
+    padding-left: 10px;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.16);
 }
