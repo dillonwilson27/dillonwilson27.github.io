@@ -2,9 +2,10 @@
     width: 11vw;
     height: 5vw;
     background: red;
-    margin-left: 1.5vh;
+    margin: 0 1.5vh;
 }
 .body-grid-wrapper{
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 14vh 1fr 14vh;
+    width:100vw;
 }
