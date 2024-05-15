@@ -72,6 +72,17 @@ body{
     transform: scale(1.5,1);
 }
 
+.article-ordered-list{
+    color: #666666;
+    font-family: "Sedan SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border-left: #666666 5px solid;
+    padding-left: 40px;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.16);
+}
+
 /*
     article images
 */
