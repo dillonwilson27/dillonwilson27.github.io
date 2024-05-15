@@ -8,10 +8,7 @@ function createAd(pane, ad){
 }
 
 function styleAd(adElement){
-    adElement.style.background = "red";
-    adElement.style.width = "11vw";
-    adElement.style.height = "5vw";
-    adElement.style.marginLeft ="1vw"
+    adElement.classList.add("generic-ad");
     return adElement;
 }
 
