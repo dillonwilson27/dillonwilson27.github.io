@@ -24,7 +24,7 @@ for(var i=1;i<=100;i++){
 }
 console.log(sum);
 console.log("task 5");
-let arr = [3,1,4,1,5];
+let arr = [3,1,4,1,5,9];
 for(let i=1;i<=10;i++){
     let total = 1;
     for(let j=1;j<=i;j++) {
@@ -37,8 +37,8 @@ for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
 }
 console.log("task 7");
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr.at(-i));
+for (let i = arr.length-1; i >= 0; i--) {
+    console.log(arr.at(i));
 }
 console.log("task 8");
 let cubes = [];
@@ -48,13 +48,13 @@ for (let i = 0; i < arr.length; i++) {
 console.log(cubes);
 console.log("task 9");
 let fibs = [1,1];
-for (let i = 1; i < arr.length; i++) {
+for (let i = 1; i < 9; i++) {
     fibs.push(fibs[i-1]+fibs[i]);
 }
 console.log(fibs);
 console.log("task 10");
-let back = [1];
-for (let i = 1; i < arr.length; i++) {
+let back = [];
+for (let i = 1; i <= arr.length; i++) {
     back.push(arr.at(-i));
 }
 console.log(back);
