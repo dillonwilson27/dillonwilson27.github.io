@@ -11,3 +11,5 @@ function createGlitch(){
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
+
+setInterval(createGlitch,1000);
