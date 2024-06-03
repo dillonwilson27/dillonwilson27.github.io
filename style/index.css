@@ -181,3 +181,9 @@ body{
 .links-list-item:hover{
     transform: rotateX(180deg);
 }
+
+.glitch{
+    background:#ff00ff;
+    position: absolute;
+    z-index: 999;
+}
