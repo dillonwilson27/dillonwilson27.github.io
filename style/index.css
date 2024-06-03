@@ -3,10 +3,14 @@ body{
     margin: 0;
 }
 
+.body-grid-wrapper{
+    display: grid;
+    margin:20px;
+    grid-template-columns: 70% 30%;
+}
+
 .main-content{
     background: tan;
-    width:80%;
-    margin-left: 7%;
     padding: 1% 2%;
     overflow: clip;
 }
@@ -139,4 +143,41 @@ body{
 .article-image:hover .article-image-caption {
     opacity: 1;
     background: red;
+}
+
+.links{
+    background:lightcoral;
+    color:beige;
+    margin: 10px;
+    height:fit-content;
+    border: 5px solid pink;
+    animation: links-animation 1s linear infinite alternate;
+}
+
+@keyframes links-animation {
+    0% {border-color: red;border-width: 20px}
+    10% {border-color: green;border-width: 10px}
+    20% {border-color: paleturquoise;border-width: 1px}
+    30% {border-color: blue;border-width: 7px}
+    40% {border-color: lightsalmon;border-width: 3px}
+    50% {border-color: indianred;border-width: 5px}
+    60% {border-color: #ffaa00;border-width: 4px}
+    70% {border-color: forestgreen;border-width: 20px}
+    80% {border-color: cornflowerblue;border-width: 14px}
+    90% {border-color: coral;border-width: 9px}
+}
+
+.links >h3{
+    text-align: center;
+}
+
+.links-link{
+    color: #5b2a2a;
+}
+
+.links-list-item:hover {
+    transition: .5s;
+}
+.links-list-item:hover{
+    transform: rotateX(180deg);
 }
