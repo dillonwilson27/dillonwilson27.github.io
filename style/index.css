@@ -186,4 +186,9 @@ body{
     background:#ff00ff;
     position: absolute;
     z-index: 999;
+    animation: glitch .2s linear infinite alternate;
+}
+
+@keyframes glitch {
+
 }
