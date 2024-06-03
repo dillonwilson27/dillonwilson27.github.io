@@ -1,5 +1,3 @@
-const linkView=document.querySelector(".links>ul")
-
 const pages = [
     {name:"The Real Reason Mice Exist",href:"mice.html"},
     {name:"The Great Sock Conspiracy: How Missing Socks Fuel a Secret Dimensional Portal",href:"ai.html"},
@@ -7,7 +5,7 @@ const pages = [
     {name:"[REDACTED]",href:"redacted.html"},
 ]
 
-function generatePagesView(){
+function generatePagesView(ul){
     for(let page of pages){
         let listItem = document.createElement("li")
 
@@ -21,8 +19,30 @@ function generatePagesView(){
 
         listItem.appendChild(linkEl);
 
-        linkView.appendChild(listItem);
+        ul.appendChild(listItem);
     }
 }
 
-generatePagesView()
+class LinksElement extends HTMLElement {
+
+    constructor() {
+        // Always call super first in constructor
+        super();
+    }
+
+    connectedCallback() {
+        this.classList.add("links")
+
+        let h3 = document.createElement("h3");
+        h3.innerHTML = "Other Articles"
+
+        let ul = document.createElement("ul");
+
+        this.appendChild(h3);
+        this.appendChild(ul);
+        generatePagesView(ul)
+    }
+}
+
+customElements.define("links-display", LinksElement);
+
