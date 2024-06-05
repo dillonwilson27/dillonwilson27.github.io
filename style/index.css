@@ -184,11 +184,36 @@ body{
 
 .glitch{
     background:#ff00ff;
-    position: absolute;
     z-index: 999;
-    animation: glitch .2s linear infinite alternate;
+    animation: glitch .1s linear infinite alternate;
+    overflow: clip;
+    position: fixed;
+    filter: blur(0);
 }
 
 @keyframes glitch {
-
+    0%{
+        background: #ff00ff;
+        color: #00ff00;
+    }
+    20%{
+        background: #000000;
+        color: #ff00ff;
+    }
+    40%{
+        background: #0000ff;
+        color: #000000;
+    }
+    60%{
+        background: #00ffff;
+        color: #0000ff;
+    }
+    80%{
+        background: #ffffff;
+        color: #00ffff;
+    }
+    90%{
+        background: #00ff00;
+        color: #ffffff;
+    }
 }
